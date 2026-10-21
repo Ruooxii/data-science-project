@@ -30,6 +30,8 @@ Can we predict the market price of a house in King County (which includes Seattl
 
 **Limitation**
 - Longitude alone has essentially no predictive power (R² ≈ 0.0005), and even the best model leaves roughly 30% of price variance unexplained. The linear and polynomial models do not capture location effects well (zipcode is nearly uncorrelated with price in this encoding), and the data covers only one county during 2014–2015, so the models may not generalize to other markets or time periods.
+- A further limitation is that the EDA relies on a single encoded zipcode field, so the analysis cannot distinguish neighborhood-level effects; adding geographic visualization (e.g., price by lat/long maps) would be a natural next step.
+
 
 ## 5. How to Run
 
